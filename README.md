@@ -89,11 +89,16 @@ Universal high-throughput document extraction and dual-provider RAG substrate.
 
 ---
 
-### 📊 GitHub Activity & Metrics
+### 📊 Verified Systems & Performance Benchmarks
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kruschdev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=070b16&title_color=00e5ff&icon_color=7c4dff&text_color=94a3b8" alt="Kevin's GitHub Stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruschdev&layout=compact&theme=tokyonight&hide_border=true&bg_color=070b16&title_color=00e5ff&text_color=94a3b8" alt="Top Languages" height="165" />
+  <img src="assets/metrics.svg" alt="Systems & Performance Benchmarks" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kruschdev&theme=tokyonight&background=070b16&ring=00e5ff&fire=7c4dff&currStreakLabel=00e5ff&sideNums=ffffff&currStreakNum=00e5ff&sideLabels=94a3b8&border=1f293d&stroke=00e5ff" alt="GitHub Streak Stats" height="175" />
 </div>
 
 ---

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="metricBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16" />
+      <stop offset="100%" stop-color="#0d1424" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+
+    <filter id="metricGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="180" rx="12" fill="url(#metricBg)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+  <!-- Metric 1: Cascade Routing -->
+  <g transform="translate(30, 24)">
+    <rect width="265" height="132" rx="8" fill="rgba(0, 229, 255, 0.04)" stroke="rgba(0, 229, 255, 0.2)" stroke-width="1" />
+    <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#00e5ff" letter-spacing="1">ROUTERARENA · RANK #1</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="34" fill="url(#cyanGrad)" filter="url(#metricGlow)">&lt; 15 µs</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="13" fill="#ffffff">CPU Cascade Latency</text>
+    <text x="20" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">7-9% cost reduction via speculative hedging</text>
+  </g>
+
+  <!-- Metric 2: Legal Precedence Grounding -->
+  <g transform="translate(325, 24)">
+    <rect width="265" height="132" rx="8" fill="rgba(168, 85, 247, 0.04)" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1" />
+    <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#c084fc" letter-spacing="1">KRUSCHLAW · AIR-GAPPED</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="34" fill="url(#purpleGrad)" filter="url(#metricGlow)">0.00 %</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="13" fill="#ffffff">False Support Rate</text>
+    <text x="20" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Physical citation spine &amp; statutory DAG</text>
+  </g>
+
+  <!-- Metric 3: Invariant Engine -->
+  <g transform="translate(620, 24)">
+    <rect width="265" height="132" rx="8" fill="rgba(244, 63, 94, 0.04)" stroke="rgba(244, 63, 94, 0.2)" stroke-width="1" />
+    <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#fb7185" letter-spacing="1">SOVEREIGN AGENT HARNESS</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="34" fill="url(#pinkGrad)" filter="url(#metricGlow)">100 %</text>
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="13" fill="#ffffff">Transactional Invariance</text>
+    <text x="20" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Zero uninspected disk writes · 2PC Staging</text>
+  </g>
+</svg>
