@@ -5,7 +5,7 @@
   <br/><br/>
 
   [![Website](https://img.shields.io/badge/Website-krusch.dev-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=060913)](https://krusch.dev)
-  [![RouterArena](https://img.shields.io/badge/RouterArena-Rank_%231_Global-7c4dff?style=for-the-badge&logo=speedtest&logoColor=white)](https://krusch.dev)
+  [![RouterArena](https://img.shields.io/badge/RouterArena-PR_%23169_Candidate-7c4dff?style=for-the-badge&logo=speedtest&logoColor=white)](https://github.com/RouteWorks/RouterArena/pull/169)
   [![PostgreSQL](https://img.shields.io/badge/PostgreSQL_16-pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/kruschdev)
   [![MCP](https://img.shields.io/badge/Model_Context_Protocol-v1.31-ff4081?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/kruschdev/krusch-context-mcp)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin_Ruschman-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-saylor-ruschman-1080493a3/)
@@ -48,7 +48,7 @@ Standardized across **Antigravity**, **Claude Code**, **Cursor**, and **Windsurf
 
 ### 🚀 Flagship Systems & Open-Source Projects
 
-#### ⚡ [krusch-cascade-router](https://github.com/kruschdev/krusch-cascade-router) · `Rank #1 on RouterArena`
+#### ⚡ [krusch-cascade-router](https://github.com/kruschdev/krusch-cascade-router) · `Sub-15µs CPU Routing`
 Dual-stage microsecond cascade router designed for CPU-only execution. Evaluates semantic difficulty, token length, query structure, and sensitivity to route requests across free, cheap, and frontier models.
 - **Latency**: Sub-15µs L1 heuristic gating; sub-8ms L2 dense vector centroid scoring.
 - **Speculative Hedging**: Automatically dispatches hedge requests when fast models return ambiguous outputs.
@@ -106,7 +106,7 @@ Universal high-throughput document extraction and dual-provider RAG substrate.
 ### 📖 Selected Articles & Deep Dives
 
 - 📑 [**Zero-Friction Agent Substrates: Powering KruschContext & KruschGit with Swappable Local & Polygres Drives**](https://krusch.dev/articles/zero-friction-sovereignty-polygres.html) — *How AI coding agents eliminate amnesia with ACID decision logs and navigate code with relational AST graphs.*
-- ⚡ [**RouterArena Global CI Evaluation: Sub-15µs Cascade Routing on Pure CPU**](https://krusch.dev) — *Benchmarking speculative hedging and dual-stage routing.*
+- ⚡ [**RouterArena Candidate Evaluation: Sub-15µs Cascade Routing on Pure CPU**](https://krusch.dev) — *Benchmarking speculative hedging and dual-stage routing.*
 
 ---
 

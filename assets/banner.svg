@@ -87,10 +87,10 @@
       <text x="28" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600" fill="#e2e8f0">krusch-context-mcp</text>
     </g>
 
-    <!-- Badge 2: RouterArena #1 -->
+    <!-- Badge 2: krusch-cascade-router -->
     <g transform="translate(192, 0)">
       <rect width="175" height="34" rx="17" fill="rgba(124, 77, 255, 0.12)" stroke="rgba(124, 77, 255, 0.4)" stroke-width="1" />
-      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#d8b4fe">★ RouterArena Rank #1</text>
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#d8b4fe">★ krusch-cascade-router</text>
     </g>
 
     <!-- Badge 3: 3-Tier Sovereign Stack -->
