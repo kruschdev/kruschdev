@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="boxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1526" />
+      <stop offset="100%" stop-color="#131c33" />
+    </linearGradient>
+
+    <linearGradient id="t1Border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#00b4d8" />
+    </linearGradient>
+
+    <linearGradient id="t2Border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c4dff" />
+      <stop offset="100%" stop-color="#b388ff" />
+    </linearGradient>
+
+    <linearGradient id="t3Border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4081" />
+      <stop offset="100%" stop-color="#ff80ab" />
+    </linearGradient>
+
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="920" height="280" rx="12" fill="#070b16" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+  <!-- Tier 1 Card -->
+  <g transform="translate(30, 30)" filter="url(#boxShadow)">
+    <rect width="260" height="210" rx="10" fill="url(#boxBg)" stroke="url(#t1Border)" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="rgba(0, 229, 255, 0.15)" />
+    <text x="23" y="33" font-size="14">🧠</text>
+    <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#00e5ff" letter-spacing="1">TIER 1 · WORKING MEMORY</text>
+    <text x="50" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="15" fill="#ffffff">krusch-context-mcp</text>
+
+    <line x1="20" y1="62" x2="240" y2="62" stroke="rgba(0, 229, 255, 0.2)" stroke-width="1" />
+
+    <text x="20" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• 5-Verb Sovereign Memory Engine</text>
+    <text x="20" y="107" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Zero-Trust Hydration on Turn 1</text>
+    <text x="20" y="129" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• ACID Decision Logs &amp; Lineage</text>
+    <text x="20" y="151" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Pre-Commit Invariant Audits</text>
+    <text x="20" y="173" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• 30-Day Auto-Decay Review</text>
+
+    <rect x="20" y="190" width="220" height="20" rx="4" fill="rgba(0, 229, 255, 0.08)" />
+    <text x="130" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" fill="#67e8f9">retrieve · remember · nudge</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g transform="translate(295, 125)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#00e5ff" stroke-width="2" stroke-dasharray="3,3" />
+    <polygon points="20,-4 28,0 20,4" fill="#00e5ff" />
+  </g>
+
+  <!-- Tier 2 Card -->
+  <g transform="translate(330, 30)" filter="url(#boxShadow)">
+    <rect width="260" height="210" rx="10" fill="url(#boxBg)" stroke="url(#t2Border)" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="rgba(124, 77, 255, 0.15)" />
+    <text x="23" y="33" font-size="14">🌳</text>
+    <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#b388ff" letter-spacing="1">TIER 2 · CODE EXPLORATION</text>
+    <text x="50" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="15" fill="#ffffff">krusch-git</text>
+
+    <line x1="20" y1="62" x2="240" y2="62" stroke="rgba(124, 77, 255, 0.2)" stroke-width="1" />
+
+    <text x="20" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Full Git DAG in PostgreSQL</text>
+    <text x="20" y="107" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• AST Symbol Graph Extraction</text>
+    <text x="20" y="129" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Recursive Caller-Callee CTEs</text>
+    <text x="20" y="151" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Exponential Recency Decay</text>
+    <text x="20" y="173" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• 40-Character SHA Pinning</text>
+
+    <rect x="20" y="190" width="220" height="20" rx="4" fill="rgba(124, 77, 255, 0.1)" />
+    <text x="130" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" fill="#c4b5fd">search_symbols · dependency_graph</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <g transform="translate(595, 125)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#7c4dff" stroke-width="2" stroke-dasharray="3,3" />
+    <polygon points="20,-4 28,0 20,4" fill="#7c4dff" />
+  </g>
+
+  <!-- Tier 3 Card -->
+  <g transform="translate(630, 30)" filter="url(#boxShadow)">
+    <rect width="260" height="210" rx="10" fill="url(#boxBg)" stroke="url(#t3Border)" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="rgba(255, 64, 129, 0.15)" />
+    <text x="23" y="33" font-size="14">⚡</text>
+    <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#ff80ab" letter-spacing="1">TIER 3 · STAGED EXECUTION</text>
+    <text x="50" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="15" fill="#ffffff">krusch (Harness)</text>
+
+    <line x1="20" y1="62" x2="240" y2="62" stroke="rgba(255, 64, 129, 0.2)" stroke-width="1" />
+
+    <text x="20" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• PostgreSQL Finite State Machine</text>
+    <text x="20" y="107" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Invariant Gate Before Mutation</text>
+    <text x="20" y="129" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Staged Virtual Unified Diffs</text>
+    <text x="20" y="151" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Two-Phase Commit Disk Application</text>
+    <text x="20" y="173" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Zero Uninspected Disk Writes</text>
+
+    <rect x="20" y="190" width="220" height="20" rx="4" fill="rgba(255, 64, 129, 0.1)" />
+    <text x="130" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" fill="#f472b6">run · task_status · diff · apply_diff</text>
+  </g>
+</svg>
