@@ -5,16 +5,16 @@
   <br/><br/>
 
   [![Website](https://img.shields.io/badge/Website-krusch.dev-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=060913)](https://krusch.dev)
+  [![Companion](https://img.shields.io/badge/Companion-Sovereign_AI-00f0ff?style=for-the-badge&logo=sparkles&logoColor=black)](https://github.com/kruschdev/krusch-companion)
+  [![MCP](https://img.shields.io/badge/Model_Context_Protocol-v1.8.0-ff4081?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/kruschdev/krusch-context-mcp)
   [![RouterArena](https://img.shields.io/badge/RouterArena-PR_%23169_Candidate-7c4dff?style=for-the-badge&logo=speedtest&logoColor=white)](https://github.com/RouteWorks/RouterArena/pull/169)
   [![PostgreSQL](https://img.shields.io/badge/PostgreSQL_16-pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/kruschdev)
-  [![MCP](https://img.shields.io/badge/Model_Context_Protocol-v1.31-ff4081?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/kruschdev/krusch-context-mcp)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin_Ruschman-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-saylor-ruschman-1080493a3/)
   [![X](https://img.shields.io/badge/X-@Kev96790724-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Kev96790724)
 
   <br/>
 
-  ### Local-First Agent Infrastructure · PostgreSQL Transaction Invariants · Sub-15µs CPU Cascade Routing
-
+  ### Sovereign Personal AI · Local-First Agent Infrastructure · Sub-15µs Cascade Routing
 </div>
 
 ---
@@ -47,6 +47,20 @@ Standardized across **Antigravity**, **Claude Code**, **Cursor**, and **Windsurf
 ---
 
 ### 🚀 Flagship Systems & Open-Source Projects
+
+#### 🛡️ [krusch-companion](https://github.com/kruschdev/krusch-companion) · `Sovereign Personal AI & Daily Companion`
+A 100% private, local-first alternative to cloud-tethered personal assistants (like OpenAI Dot or xAI Grok Companion). Triages raw voice thought streams into actionable 5-tier priority boards and maintains persistent working memory on local SQLite.
+- **Zero Cloud Egress**: 100% local SQLite WAL storage; zero prompt training or data harvesting.
+- **Microsecond Routing**: Employs `krusch-cascade-router` (<15µs CPU L0 fast-path) and local Ollama edge models for $0.00 daily interaction costs.
+- **Zero Data Retention Cloud Mode**: Optional OpenRouter integration injecting `provider: { data_collection: "deny" }` for zero-GPU setups while keeping memory local.
+- **Installable PWA**: React 19 + Vite luxury dark glassmorphism dashboard with ambient focus timer and daily coaching reflections.
+
+#### 🧠 [krusch-context-mcp](https://github.com/kruschdev/krusch-context-mcp) · `Persistent Working Memory & Invariant Steering`
+A lightweight, 5-tool Model Context Protocol server giving AI coding agents (Claude Code, Cursor, Windsurf, Antigravity) persistent memory and rule enforcement across sessions.
+- **5 Core Verbs**: `retrieve`, `remember`, `revise`, `nudge`, `health` constrained to `<350` prompt tokens.
+- **Temporal Fact Superseding**: Invalidation engine with lineage links that retires obsolete rules and prevents contradictory prompt context.
+- **Pre-Commit Invariant Gate**: Audits code diffs against project rules before disk mutation to prevent silent regressions.
+- **SQLite-First**: Zero-Docker setup built on `node:sqlite` with optional PostgreSQL dual-engine sync.
 
 #### ⚡ [krusch-cascade-router](https://github.com/kruschdev/krusch-cascade-router) · `Sub-15µs CPU Routing`
 Dual-stage microsecond cascade router designed for CPU-only execution. Evaluates semantic difficulty, token length, query structure, and sensitivity to route requests across free, cheap, and frontier models.
