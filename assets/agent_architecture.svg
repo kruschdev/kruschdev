@@ -58,19 +58,19 @@
     <rect width="260" height="210" rx="10" fill="url(#boxBg)" stroke="url(#t2Border)" stroke-width="1.5" />
     <circle cx="28" cy="28" r="14" fill="rgba(124, 77, 255, 0.15)" />
     <text x="23" y="33" font-size="14">🌳</text>
-    <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#b388ff" letter-spacing="1">TIER 2 · CODE EXPLORATION</text>
-    <text x="50" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="15" fill="#ffffff">krusch-git</text>
+    <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11" fill="#b388ff" letter-spacing="1">TIER 2 · CODE &amp; OS FLEET</text>
+    <text x="50" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14.5" fill="#ffffff">krusch-git + krusch-fs-mcp</text>
 
     <line x1="20" y1="62" x2="240" y2="62" stroke="rgba(124, 77, 255, 0.2)" stroke-width="1" />
 
-    <text x="20" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Full Git DAG in PostgreSQL</text>
-    <text x="20" y="107" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• AST Symbol Graph Extraction</text>
-    <text x="20" y="129" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Recursive Caller-Callee CTEs</text>
-    <text x="20" y="151" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Exponential Recency Decay</text>
-    <text x="20" y="173" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• 40-Character SHA Pinning</text>
+    <text x="20" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Git DAG &amp; AST Symbol Graphs</text>
+    <text x="20" y="107" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Recursive Caller-Callee CTEs</text>
+    <text x="20" y="129" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• OS &amp; Fleet Page Trees (PDF/Config)</text>
+    <text x="20" y="151" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• SHA-256 Page-Anchored Memory</text>
+    <text x="20" y="173" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">• Redacted .env &amp; SSH Fleet Sync</text>
 
     <rect x="20" y="190" width="220" height="20" rx="4" fill="rgba(124, 77, 255, 0.1)" />
-    <text x="130" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" fill="#c4b5fd">search_symbols · dependency_graph</text>
+    <text x="130" y="204" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10" fill="#c4b5fd">dependency_graph · page_tree · locate</text>
   </g>
 
   <!-- Arrow 2 -> 3 -->
