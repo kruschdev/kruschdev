@@ -5,6 +5,7 @@
   <br/><br/>
 
   [![Website](https://img.shields.io/badge/Website-krusch.dev-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=060913)](https://krusch.dev)
+  [![KruschStack](https://img.shields.io/badge/KruschStack-v1.0.0_(npx_%7C_Docker)-00e676?style=for-the-badge&logo=npm&logoColor=060913)](https://github.com/kruschdev/krusch-stack)
   [![Tech Stack](https://img.shields.io/badge/2026_Stack-Architecture_Blueprint-7c4dff?style=for-the-badge&logo=buffer&logoColor=white)](https://krusch.dev/articles/the-sovereign-ai-tech-stack.html)
   [![MCP](https://img.shields.io/badge/KruschContext_MCP-v1.8.1-ff4081?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/kruschdev/krusch-context-mcp)
   [![KruschGit](https://img.shields.io/badge/KruschGit-v1.2.2-00b4d8?style=for-the-badge&logo=git&logoColor=white)](https://github.com/kruschdev/krusch-git)
@@ -15,7 +16,7 @@
 
   <br/>
 
-  ### Multi-Family Bare-Metal GPUs · 3-Tier MCP Substrates · `@krusch/toolkit` · PostgreSQL 16 State Planes
+  ### Multi-Family Bare-Metal GPUs · Unified `krusch-stack` (`39` MCP Tools) · `@krusch/toolkit` · PostgreSQL 16 State Planes
 </div>
 
 ---
@@ -25,6 +26,7 @@
 > **Language models are stateless, interchangeable compute samplers—routing, working memory, codebase navigation, and filesystem mutations belong to a deterministic systems stack.**
 
 Instead of layering heavyweight prompt frameworks over a single metered cloud API and flat sliding-window RAG, my engineering stack inverts the model:
+- **One-Command Unified Distribution ([`krusch-stack`](https://github.com/kruschdev/krusch-stack) `v1.0.0`):** Install the entire 7-pillar, 39-tool Sovereign AI Tech Stack in a single command (`npx krusch-stack init` for zero-Docker SQLite WAL, or `docker compose up -d` for full PostgreSQL 16 + `pgvector`), auto-configuring **Claude Code**, **Cursor**, **Windsurf**, and **Antigravity**.
 - **Multi-Family GPU Isolation:** 5 local bare-metal GPUs (`57GB+` VRAM over `10GbE`) + an on-demand **96GB Blackwell G4** burst tier run orthogonal model families (`Qwen3`, `Gemma 4`, `Hermes 3`, `GPT-OSS`, `Gemini 4 Argon`) so no model family ever grades its own homework.
 - **Relational State & 7 Focused MCP Servers:** Working memory, Git Commit DAGs, AST caller/callee graphs, and 8-node OS page trees live in **PostgreSQL 16 + `pgvector` HNSW** and zero-Docker **SQLite WAL**.
 - **Zero-Bloat Shared Runtime (`@krusch/toolkit` & `krusch_toolkit`):** Every Node.js 22 ESM and Python 3.12 repository imports unified LLM/vision clients, logprob routers, cross-family Referee gates, and context pruners from one monorepo toolkit.
@@ -34,8 +36,16 @@ Instead of layering heavyweight prompt frameworks over a single metered cloud AP
 
 ### 🏗️ The 2026 Sovereign AI Tech Stack Overview
 
+```bash
+# Zero-config local install (Node.js 22+ built-in SQLite WAL) — auto-configures Claude Code, Cursor, Windsurf & Antigravity
+npx krusch-stack init --ide all --mode unified --profile full && npx krusch-stack doctor
+```
+
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────────────┐
+│ UNIFIED DISTRIBUTION · krusch-stack v1.0.0 (npx krusch-stack init │ docker compose) │
+│           7 Integrated Pillars · 39 Annotated MCP Tools · SQLite WAL + pgvector     │
+├─────────────────────────────────────────────────────────────────────────────────────┤
 │ LAYER 5 · SOVEREIGN DOMAIN ENGINES & EXECUTION SURFACES                             │
 │           KruschNexus · KruschLaw (0.00% FSR) · KruschBiz · Companion · G-Krusch    │
 ├─────────────────────────────────────────────────────────────────────────────────────┤
@@ -77,7 +87,7 @@ All local inference models are pinned 100% in VRAM (`keep_alive: -1`, `q8_0` qua
 
 ### 🛠️ Layer 2: The 7-Server Model Context Protocol (MCP) & State Substrate
 
-Standardized across **Antigravity**, **Claude Code**, **Cursor**, and **Windsurf**. Instead of bloating agent context with dozens of overlapping tools, each MCP server exposes a disciplined verb contract (`~350–450` tokens) with explicit behavioral annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`):
+Standardized across **Antigravity**, **Claude Code**, **Cursor**, and **Windsurf**. You can deploy the entire stack as a single unified server via [**`krusch-stack`**](https://github.com/kruschdev/krusch-stack) (`npx krusch-stack init`) or run each modular MCP server independently with explicit behavioral annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`, `openWorldHint`):
 
 <div align="center">
   <img src="assets/agent_architecture.svg" alt="3-Tier Sovereign Agent MCP Ecosystem" width="100%" />
@@ -87,13 +97,14 @@ Standardized across **Antigravity**, **Claude Code**, **Cursor**, and **Windsurf
 
 | Tier / Domain | MCP Server & Package | Verb Contract | Storage Engine & Architectural Role |
 | :--- | :--- | :--- | :--- |
+| **Unified Stack**<br>All-in-One Bundle | [**`krusch-stack`**](https://github.com/kruschdev/krusch-stack) `v1.0.0` | **39 Verbs (All 7 Pillars):**<br>`npx krusch-stack init \| doctor \| mcp \| serve` | Zero-Docker `node:sqlite` WAL (`.krusch-stack/stack.db`) or `docker compose up -d` (`PostgreSQL 16 + pgvector`). Bundles Tiers 1–5 + Cascade Router into one MCP stdio/HTTP gateway (`:3780`). |
 | **Tier 1**<br>Working Memory | [**`krusch-context-mcp`**](https://github.com/kruschdev/krusch-context-mcp) `v1.8.1` | 5 Verbs:<br>`retrieve`, `remember`, `revise`, `nudge`, `health` | `node:sqlite` WAL + PostgreSQL 16. Enforces Turn-1 Zero-Trust Hydration, closed 5-category taxonomy, temporal lineage superseding, and `INV-12` span-grounded SHA-256 drift detection. |
 | **Tier 2A**<br>Code & Git DAG | [**`krusch-git`**](https://github.com/kruschdev/krusch-git) `v1.2.2` | 7 Verbs:<br>`search_symbols`, `dependency_graph`, `file_symbols`, `semantic_search`, `read_tree`, `read_blob`, `list_repos` | PostgreSQL 16 + `pgvector` HNSW. Zero-dependency brace-matched AST symbol chunker, recursive SQL CTE caller/callee blast-radius checks, and Hybrid BM25 + 1,024-dim RRF with temporal decay. |
 | **Tier 2B**<br>OS & Fleet Memory | [**`krusch-fs-mcp`**](https://github.com/kruschdev/krusch-fs-mcp) `v0.3.1` | 6 Verbs:<br>`search`, `locate`, `page_tree`, `read_page`, `remember_on_page`, `sync` | SQLite WAL / Postgres + **KruschNexus Library Mode**. Indexes PDFs, DOCX, `/etc/systemd`, and `/etc/fstab` across 8 SSH nodes into SHA-256 drift-verified page trees with `.env` secret value redaction. |
 | **Tier 3**<br>2PC Execution | [**`krusch` (Harness)**](https://github.com/kruschdev/krusch) `v0.1.0` | 7 Verbs:<br>`run`, `task_status`, `diff`, `apply_diff`, `explain`, `reject`, `abort` | PostgreSQL 16 finite state machine + Bubblewrap sandboxes. Stages patches in `staged_diffs`, runs isolated container tests, and commits to disk via `<32ms` two-phase commit (2PC) apply journals. |
-| **Domain RAG**<br>Law & Contracts | **`krusch-gateway-mcp`** | 5 Verbs (`<450` tok):<br>`ask_law`, `ask_biz`, `check_compliance`, `ingest`, `purge` | Unified stdio router across **KruschLaw** (`0.00%` FSR statutory DAGs), **KruschBiz** (confirmed-edge contract graphs), **KruschBizLaw** ("The Join"), and **KruschNexus**. |
-| **Web Design**<br>UI Primitives | **`krusch-frontend-mcp`** | `get_canonical_template`, `list_canonical_templates`, `query_design_rules`, `css_to_tailwind` | Serves bit-for-bit canonical HTML/SVG components (`article-shell`, `footer-deadbolt`, `cyber-grid`) and responsive layout rules. |
-| **Workspace Hub**<br>Drive, Docs & Mail | **`g-krusch`** | 12 Verbs:<br>`search_drive_rag`, `write_drive_file`, `get_agent_steering`, etc. | SQLite FTS5 + 1,024-dim Drive RAG, AES-256-GCM vault, and server-side OpenXML/HTML/CSV conversion for native Google Docs (`.gdoc`), Sheets (`.gsheet`), and Slides (`.slides` with speaker notes). |
+| **Domain RAG**<br>Law & Contracts | [**`krusch-gateway-mcp`**](https://github.com/kruschdev/krusch-gateway-mcp) | 5 Verbs (`<450` tok):<br>`ask_law`, `ask_biz`, `check_compliance`, `ingest`, `purge` | Unified stdio router across **KruschLaw** (`0.00%` FSR statutory DAGs), **KruschBiz** (confirmed-edge contract graphs), **KruschBizLaw** ("The Join"), and **KruschNexus**. |
+| **Web Design**<br>UI Primitives | [**`krusch-frontend-mcp`**](https://github.com/kruschdev/krusch-frontend-mcp) | `get_canonical_template`, `list_canonical_templates`, `query_design_rules`, `css_to_tailwind` | Serves bit-for-bit canonical HTML/SVG components (`article-shell`, `footer-deadbolt`, `cyber-grid`) and responsive layout rules. |
+| **Workspace Hub**<br>Drive, Docs & Mail | [**`g-krusch`**](https://github.com/kruschdev/G-krusch) | 12 Verbs:<br>`search_drive_rag`, `write_drive_file`, `get_agent_steering`, etc. | SQLite FTS5 + 1,024-dim Drive RAG, AES-256-GCM vault, and server-side OpenXML/HTML/CSV conversion for native Google Docs (`.gdoc`), Sheets (`.gsheet`), and Slides (`.slides` with speaker notes). |
 | **Hybrid Bridge**<br>Cloud Substrate | [**`@krusch/polygres-connector`**](https://github.com/kruschdev/krusch-polygres-connector) | `getSymbolContext`, `auditRefactor`, `sync` | Bridges local SQLite/PostgreSQL with Polygres Cloud (`pgContext` + `pgGraph`) with 40-char SHA pinning and fail-closed air-gap enforcement. |
 
 ---
