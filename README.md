@@ -131,10 +131,10 @@ We avoid heavyweight framework dependencies by standardizing every service acros
 ### 🔄 Layer 4: Autonomous SRE, Verification & Dual-Track QLoRA Self-Distillation
 
 1. **Spec-First & Disjoint Parallel Subagent Fan-Out (`INV-606`):** Multi-module builds freeze exports, schemas, and JSON contracts (`{ ok, tool, summary, data }`) in `spec.md`, fan out parallel subagents owning 1–2 disjoint files with local `node --check` / `npx oxlint` verification, and wire shared choke points exclusively in the parent orchestrator before running the **Dual-Zero-Finding Convergence Gate**.
-2. **Jean SRE 24/7 Fleet & Codebase Sweeps:** Our autonomous SRE daemon continuously audits all **86 software targets** and 21+ infrastructure checks—building AST symbol indexes, running cross-family Referee audits, verifying candidate fixes inside hermetic container test suites (`node --test` and `pytest`), and normalizing passing diffs into `$WORKSPACE_ROOT`-portable SFT training rows.
-3. **Dual-Track QLoRA Distillation on 96GB Blackwell G4:**
-   - **120B Teacher Track (`gpt-oss-120b`):** Uses native Blackwell `Mxfp4Config(dequantize=False)` to keep 128 MoE experts frozen in hardware-native 4-bit MXFP4 (`~63GB` VRAM) while training BF16 attention LoRA adapters (`r=16, alpha=32`) on **1,168 elitist teacher rows** (`2x` oversampled Gemini 4 Argon Golden Remediations + rejection-sampled 120B traces with `>=3` `file:line` citations).
-   - **30B Student Track (`qwen3-coder-30b-moe`):** Oversamples Argon Golden Remediations `3x` alongside **9,377 test-verified Student SFT rows** to continuously upgrade our local `124.2 tok/s` coding workhorse.
+2. **[Jean SRE by Kruschdev](https://github.com/kruschdev/Jean-SRE-by-kruschdev) (`jean-sre`) 24/7 Fleet & Codebase Sweeps:** Our autonomous SRE daemon continuously audits all **88 software targets** and 21+ infrastructure checks—building AST symbol indexes, running cross-family Referee audits, verifying candidate fixes inside hermetic container test suites (`node --test` and `pytest`), and publishing **17,899 test-verified SFT trajectories** ([`krush420/sovereign-code-audit-sft`](https://huggingface.co/datasets/krush420/sovereign-code-audit-sft)).
+3. **Dual-Track QLoRA Distillation on 96GB Blackwell G4 (Published on Hugging Face [`@krush420`](https://huggingface.co/krush420)):**
+   - **120B Teacher Track ([`krush420/gpt-oss-120b-sre-lora`](https://huggingface.co/krush420/gpt-oss-120b-sre-lora)):** Uses native Blackwell `Mxfp4Config(dequantize=False)` to keep 128 MoE experts frozen in hardware-native 4-bit MXFP4 (`~60.8GB` VRAM) while training BF16 attention LoRA adapters (`r=16, alpha=32`, loss `7.448 -> 1.737`, `64.89%` token acc) on **2,208 elitist teacher rows** (`2x` oversampled Gemini 4 Argon Golden Remediations + rejection-sampled 120B traces).
+   - **30B Student Track ([`krush420/qwen3-coder-30b-sre-lora`](https://huggingface.co/krush420/qwen3-coder-30b-sre-lora)):** Trained on our curated Elitist 120B + Argon Golden Remediations split (loss `0.731 -> 0.214`, `93.36%` token acc) to continuously upgrade our local `124.2 tok/s` coding workhorse.
 
 ---
 
@@ -163,9 +163,10 @@ We avoid heavyweight framework dependencies by standardizing every service acros
 
 ---
 
-### 📖 Selected Architecture Papers ([All 19 on krusch.dev →](https://krusch.dev/articles/))
+### 📖 Selected Architecture Papers ([All 20 on krusch.dev →](https://krusch.dev/articles/))
 
 - ⚡ [**The 2026 Sovereign AI Tech Stack: Multi-Family GPUs, 3-Tier MCP Substrates, `@krusch/toolkit`, and Closed-Loop Distillation**](https://krusch.dev/articles/the-sovereign-ai-tech-stack.html) — *End-to-end blueprint of our 5 bare-metal GPUs + 96GB Blackwell G4 burst tier, 7 MCP servers, zero-bloat Node 22 / Python 3.12 runtime, and dual-track QLoRA self-distillation.*
+- 🧠 [**The Closed-Loop Audit & Distillation Pipeline: 3-Tier MCP Context Hydration, Cross-Family Referees & Dual-Track QLoRA**](https://krusch.dev/articles/how-we-use-jean-for-code-audits.html) — *How [Jean SRE](https://github.com/kruschdev/Jean-SRE-by-kruschdev) audits 88 repositories across 11 checkpoints and distills [17,899 test-verified SFT trajectories](https://huggingface.co/datasets/krush420/sovereign-code-audit-sft) into our [120B Teacher](https://huggingface.co/krush420/gpt-oss-120b-sre-lora) and [30B Student](https://huggingface.co/krush420/qwen3-coder-30b-sre-lora) QLoRA adapters.*
 - ⚡ [**Multi-Tier Cascade Routing: Slashing Enterprise Inference Budgets by 60–80%**](https://krusch.dev/articles/multi-tier-cascade-routing.html) — *How `krusch-pre-router` (`<15µs` CPU gate) and `krusch-cascade-router` achieve 80.72% accuracy at `$0.21/1K` on RouteWorks RouterArena.*
 - 🧠 [**Beyond Flat Vector RAG: What Makes `krusch-context-mcp` Special**](https://krusch.dev/articles/what-makes-krusch-context-mcp-special.html) — *The 5-verb working memory contract (`~350` tokens), closed write taxonomy, and `INV-12` span-grounded SHA-256 drift detection.*
 - 🌳 [**`krusch-git`: Git DAG Indexing, Relational AST Symbols, and Hybrid Recency Search**](https://krusch.dev/articles/krusch-git-architecture.html) — *Zero-dependency AST symbol extraction, recursive multi-hop caller/callee CTEs, and Hybrid RRF in PostgreSQL 16 + `pgvector`.*
