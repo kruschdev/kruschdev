@@ -14,10 +14,40 @@
       <stop offset="100%" stop-color="#ff4081" />
     </linearGradient>
 
-    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e5ff" />
-      <stop offset="100%" stop-color="#7c4dff" />
+    <!-- 13-Point Grateful Dead Lightning Bolt Gradients (matches @kruschdev Stealie avatar) -->
+    <linearGradient id="boltGrad" x1="78%" y1="4%" x2="18%" y2="96%">
+      <stop offset="0%" stop-color="#6ff1fe" />
+      <stop offset="24%" stop-color="#37e1ff" />
+      <stop offset="48%" stop-color="#7be8ff" />
+      <stop offset="72%" stop-color="#8b6eff" />
+      <stop offset="90%" stop-color="#9d4edd" />
+      <stop offset="100%" stop-color="#d946ef" />
     </linearGradient>
+
+    <radialGradient id="boltCoreGlow" cx="55%" cy="46%" r="48%">
+      <stop offset="0%" stop-color="#e6fdff" stop-opacity="0.72" />
+      <stop offset="48%" stop-color="#67e8f9" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="boltRimGrad" x1="80%" y1="0%" x2="15%" y2="100%">
+      <stop offset="0%" stop-color="#bef8ff" />
+      <stop offset="45%" stop-color="#ffffff" />
+      <stop offset="80%" stop-color="#f5d0fe" />
+      <stop offset="100%" stop-color="#fae8ff" />
+    </linearGradient>
+
+    <radialGradient id="ambientCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.16" />
+      <stop offset="55%" stop-color="#00e5ff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="ambientPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9d4edd" stop-opacity="0.18" />
+      <stop offset="55%" stop-color="#7c4dff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0" />
+    </radialGradient>
 
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="rgba(0, 229, 255, 0.4)" />
@@ -25,14 +55,24 @@
       <stop offset="100%" stop-color="rgba(0, 229, 255, 0.1)" />
     </linearGradient>
 
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+    <!-- SVG 1.1 Universal Neon Glow Filter -->
+    <filter id="boltNeonGlow" x="-40%" y="-30%" width="180%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6.5" result="outerBlur" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="innerBlur" />
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode in="outerBlur" />
+        <feMergeNode in="innerBlur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <clipPath id="cardClip">
+      <rect width="1000" height="280" rx="16" />
+    </clipPath>
+
+    <clipPath id="deadBoltClip">
+      <polygon points="121,2 79,25 93,28 48,50 78,53 19,89 58,85 5,128 44,124 5,158 34,155 4,212 47,191 35,186 70,171 52,168 105,139 66,140 123,103 74,105 128,69 86,69 126,35 102,36" />
+    </clipPath>
 
     <!-- Cyber Grid Pattern -->
     <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -41,17 +81,42 @@
   </defs>
 
   <!-- Card Background -->
-  <rect width="1000" height="280" rx="16" fill="url(#bgGrad)" />
-  <rect width="1000" height="280" rx="16" fill="url(#cyberGrid)" />
+  <g clip-path="url(#cardClip)">
+    <rect width="1000" height="280" rx="16" fill="url(#bgGrad)" />
+    <rect width="1000" height="280" rx="16" fill="url(#cyberGrid)" />
+
+    <!-- Ambient Glow Clouds -->
+    <circle cx="118" cy="105" r="145" fill="url(#ambientCyan)" />
+    <circle cx="92" cy="195" r="125" fill="url(#ambientPurple)" />
+    <circle cx="880" cy="180" r="170" fill="url(#ambientPurple)" />
+  </g>
   <rect width="1000" height="280" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" />
 
-  <!-- Ambient Glow Spheres -->
-  <circle cx="120" cy="80" r="100" fill="#00e5ff" opacity="0.07" filter="url(#glow)" />
-  <circle cx="880" cy="180" r="120" fill="#7c4dff" opacity="0.08" filter="url(#glow)" />
-
-  <!-- Lightning Bolt Icon (13-point dead-bolt brand) -->
-  <g transform="translate(60, 48) scale(0.95)" filter="url(#glow)">
-    <polygon points="68,2 26,26 62,32 22,52 58,58 18,78 54,84 14,104 50,110 10,130 46,136 6,180 40,154 74,142 44,128 78,116 48,102 82,90 52,76 86,64 56,50 90,38 60,24 88,14" fill="url(#boltGrad)" />
+  <!-- 13-Point Grateful Dead Lightning Bolt (matches @kruschdev Stealie avatar) -->
+  <g transform="translate(46, 34) scale(0.86)">
+    <!-- Soft Neon Aura -->
+    <polygon
+      points="121,2 79,25 93,28 48,50 78,53 19,89 58,85 5,128 44,124 5,158 34,155 4,212 47,191 35,186 70,171 52,168 105,139 66,140 123,103 74,105 128,69 86,69 126,35 102,36"
+      fill="url(#boltGrad)"
+      opacity="0.55"
+      filter="url(#boltNeonGlow)"
+    />
+    <!-- Crisp Cyan -> Purple-Magenta Core -->
+    <polygon
+      points="121,2 79,25 93,28 48,50 78,53 19,89 58,85 5,128 44,124 5,158 34,155 4,212 47,191 35,186 70,171 52,168 105,139 66,140 123,103 74,105 128,69 86,69 126,35 102,36"
+      fill="url(#boltGrad)"
+    />
+    <!-- Central Ice-Cyan Luminance Bloom -->
+    <ellipse cx="68" cy="98" rx="48" ry="54" fill="url(#boltCoreGlow)" clip-path="url(#deadBoltClip)" />
+    <!-- Luminous White-Cyan-Orchid Outer Rim -->
+    <polygon
+      points="121,2 79,25 93,28 48,50 78,53 19,89 58,85 5,128 44,124 5,158 34,155 4,212 47,191 35,186 70,171 52,168 105,139 66,140 123,103 74,105 128,69 86,69 126,35 102,36"
+      fill="none"
+      stroke="url(#boltRimGrad)"
+      stroke-width="2.5"
+      stroke-linejoin="miter"
+      stroke-miterlimit="8"
+    />
   </g>
 
   <!-- Header Title -->
