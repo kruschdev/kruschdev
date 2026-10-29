@@ -64,6 +64,7 @@ npx krusch-stack init --ide all --defer-tools && npx krusch-stack doctor
 
 ### 📖 Selected Architecture Writing ([All Papers on krusch.dev →](https://krusch.dev/articles/))
 
+- [**The 15 Production Agentic Systems: Reference Architecture, State-Machine Invariants & Benchmark Proofs**](https://krusch.dev/articles/fifteen-production-agent-systems.html) — Three architectural teardowns covering `100+` async orchestration, typed Pydantic v2 swarms, `72h` Slack HMAC HITL leases, `100`-trajectory Golden DAG CI gates, `$0.50` cost kill-switches, and `5%` shadow diffing.
 - [**How an Open-Weights Sovereign Stack Stacks Up Across 317,000+ Benchmark Queries (Including Where Cloud Still Wins)**](https://krusch.dev/articles/how-krusch-stack-stacks-up.html) — Empirical cross-stack comparison against wrapper and commercial cloud stacks across 10 external benchmarks (`68/68` SHA-256 gates), with honest gaps and raw Hugging Face logs.
 - [**The 2026 Sovereign AI Tech Stack**](https://krusch.dev/articles/the-sovereign-ai-tech-stack.html) — Multi-family GPUs, 3-Tier MCP substrates, zero-bloat runtimes, and closed-loop QLoRA distillation.
 - [**Multi-Tier Cascade Routing Architecture**](https://krusch.dev/articles/multi-tier-cascade-routing.html) — `#1` on Martian `RouterBench` (`0-shot`/`5-shot` ID & OOD), `#1` on ACL 2026 `LLMRouterBench` (`-83.95%` cost), `RouterArena` (`0.7883` CI, PR #169 open), live SSE logprob aborts (`-48.0%` TTFT), and `1,442x` faster agentic `Polyglot` routing.
