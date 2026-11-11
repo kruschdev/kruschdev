@@ -34,17 +34,23 @@ npx krusch-stack init --ide all --defer-tools && npx krusch-stack doctor
 
 <table>
   <tr>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://krusch.dev/assets/video/krusch-context-mcp-demo.mp4"><img src="assets/krusch-context-mcp-video-card.jpg" alt="Watch krusch-context-mcp Narrated Walkthrough (01:31)" width="100%" /></a>
       <sub><strong><a href="https://krusch.dev/assets/video/krusch-context-mcp-demo.mp4">▶ krusch-context-mcp v2.0 (01:31)</a></strong><br/>5-verb SQLite/PG memory &amp; SHA-256 span provenance</sub>
     </td>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <a href="https://krusch.dev/assets/video/krusch-toolkit-golden-bricks.mp4"><img src="assets/krusch-toolkit-video-card.jpg" alt="Watch @krusch/toolkit: The Golden Bricks Walkthrough (02:26)" width="100%" /></a>
       <sub><strong><a href="https://krusch.dev/assets/video/krusch-toolkit-golden-bricks.mp4">▶ @krusch/toolkit v1.8.1 (02:26)</a></strong><br/>39 runtime Golden Bricks &amp; 16 &lt;1ms AST guards</sub>
     </td>
-    <td width="33%" align="center" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
       <a href="https://krusch.dev/assets/video/krusch-stack-tour.mp4"><img src="assets/krusch-stack-video-card.jpg" alt="Watch KruschStack Product Tour (01:40)" width="100%" /></a>
       <sub><strong><a href="https://krusch.dev/assets/video/krusch-stack-tour.mp4">▶ krusch-stack v1.1.0 (01:40)</a></strong><br/>Unified 7-pillar, 39-tool stack &amp; 2PC + Grounded harnesses</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://krusch.dev/assets/video/hermes-parallax-showcase.mp4"><img src="assets/hermes-parallax-video-card.jpg" alt="Watch Hermes Parallax Narrated Showcase (02:05)" width="100%" /></a>
+      <sub><strong><a href="https://krusch.dev/assets/video/hermes-parallax-showcase.mp4">▶ Hermes Parallax v0.1.0 (02:05)</a></strong><br/>6-pole epistemic framing, blind AST counterfactuals &amp; DPO forge</sub>
     </td>
   </tr>
 </table>
@@ -72,6 +78,7 @@ npx krusch-stack init --ide all --defer-tools && npx krusch-stack doctor
 | [**`krusch-git`**](https://github.com/kruschdev/krusch-git) & [**`krusch-fs-mcp`**](https://github.com/kruschdev/krusch-fs-mcp) | AST Blast-Radius & OS Page Memory | 2-hop AST call-graph blast-radius checks before signature edits + SHA-256 page-anchored OS config memory. **`56.40%` 10-task Macro `NDCG@10`** in clean-room **ACL 2025 `CoIR`** evaluation (`2.39M` docs / `162,216` Qs, `> Voyage-Code-002` `56.26%` 512-tok baseline); beats `CodeBERT` & `UniXcoder` across `47,998` `RepoBench-R` queries. |
 | [**`Jean SRE`**](https://github.com/kruschdev/Jean-SRE-by-kruschdev) & [**`@krush420`**](https://huggingface.co/krush420) | Hermetic SRE Daemon & QLoRA Distillation | Containerized repository audit daemon + Rule-of-3 scouting; published [**`18,131` Zero-Leak SFT + DPO rows**](https://huggingface.co/datasets/krush420/sovereign-code-audit-sft) training [**`gemma4-31b-sre-lora` (`57.33%` @ `$0.00` — highest open-weights score in self-run 28-run evaluation)**](https://huggingface.co/krush420/gemma4-31b-sre-lora), [**`120B` Teacher**](https://huggingface.co/krush420/gpt-oss-120b-sre-lora), [**`30B` Student (`43.00%`)**](https://huggingface.co/krush420/qwen3-coder-30b-sre-lora), & [**`8B` Edge (`15.7x` lift)**](https://huggingface.co/krush420/llama3-hermes3-8b-sre-lora). |
 | [**`krusch-law`**](https://github.com/kruschdev/krusch-law) & [**`krusch-nexus`**](https://github.com/kruschdev/krusch-nexus) | Evidentiary Citation Spines & DBOS Workflows | Layout-true Poppler TSV document spines (`100%` held-out citation accuracy) + two-pass proposition entailment enforcing a **`0.00%` False Support Rate**; **`26.74%` Macro F1 (`k=1`) & `44.72%` Recall (`k=2`)** across `6,889` **Stanford `LegalBench-RAG`** queries (`714` contracts). |
+| [**`Hermes-Parallax`**](https://github.com/kruschdev/Hermes-Parallax) | Epistemic Triangulation & Blind AST Counterfactuals | Zero-dependency Nous Hermes Agent plugin ([**Catalog PR #153023**](https://github.com/NousResearch/hermes-agent/pull/153023), `10/10` `pytest`, `15/15` validator checks): 6 symmetrical US/global framing poles with Mandarin tokenization + verbatim quote verification, blind AST security entity-scrubbing (`168` runs across `7` models), and `O_NOFOLLOW` poison-quarantined DPO curation. |
 
 ---
 
