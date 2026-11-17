@@ -90,6 +90,7 @@ Building a self-directed R&D lab is different from modifying someone else's code
 - **[`RouteWorks/RouterArena`](https://github.com/RouteWorks/RouterArena/pull/169) (Merged into [`main @ 844e93b`](https://github.com/RouteWorks/RouterArena/commit/844e93b547e6278b01994720de39bfc32ffd18bc)):** Multi-tier LLM routing benchmark where maintainer `@yl231` audited all `8,400` live OpenRouter predictions and `github-actions[bot]` CI Run `#780` (`0.7263` score, `0` abnormal) before merging `PR #169`.
 - **[`julianosig/easi.run`](https://github.com/julianosig/easi.run/pull/3) (Merged `PR #3`, [`Issue #2`](https://github.com/julianosig/easi.run/issues/2), Rust Wayland/CDP):** Isolated Chromium `contenteditable` focus ordering and shipped navigation/editing key delivery across protocol, display, and relay crates.
 - **[`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/153023) (Merged `PR #153023`):** Passed `15/15` catalog validation and `plugin_guard` static checks to merge the zero-dependency `Hermes Parallax` epistemic counterfactual plugin.
+- **Time-Boxed External Hackathon Sprints (`HydraScope` & `DEADBOLT`):** Shipped [**`HydraScope`**](https://github.com/kruschdev/HydraScope) ([Live Demo](https://hydrascope.krusch.dev) · [Write-Up](https://krusch.dev/articles/hydrascope-agent-context-on-hydradb)) for the HydraDB Hackathon (self-hosted `hydradb:0.4.0` OpenCypher + `@hydradb/selfgraph` agent context layer compressing `64` MCP tool schemas by `-94.2%`, surfacing the `8` merged `hydra-db/selfgraph` PRs above) and [**`DEADBOLT`**](https://github.com/kruschdev/deadbolt) ([Architecture Paper](https://krusch.dev/articles/deadbolt-evolve-software-factory-governance)) in-person under a 20-hour code freeze at EVOLVE (8090 AI Hackathon, Redwood City), integrating 8090's Work Order APIs and HydraDB `v0.4.0`.
 
 ---
 
@@ -114,7 +115,9 @@ Before focusing full-time on AI infrastructure, I spent nine years (`2014–2023
 
 ---
 
-### 🧰 Technical Stack
+### 🧰 Core Engineering Competencies & Technical Stack
+
+- **Core Engineering Competencies:** `Software Architecture & Systems Engineering` · `Distributed & Crash-Recoverable State` · `AI Agent Orchestration & MCP` · `Application & Sandbox Security` · `Automated Testing & Verification` · `Inference & Latency Optimization` · `Open-Source Collaboration (Rust, TypeScript, Python)`
 
 - **Languages & Runtimes:** `JavaScript / TypeScript` (`Node.js 22+ ESM`, `React`, `Vite`, `Express`, `Cloudflare Workers`, `oxlint`) · `Python 3.12` (`FastAPI`, `SQLAlchemy 2.0`, `Pydantic v2`, `PyTorch`, `asyncio`) · `SQL`
 - **State, Graph & Search:** `PostgreSQL 16` (`pgvector` HNSW, `tsvector` GIN, Hybrid RRF) · `node:sqlite` WAL + external-content Porter `FTS5` · `snowflake-arctic-embed2` (`8,192`-ctx, `1,024`-dim, asymmetric `query:` calibration)
