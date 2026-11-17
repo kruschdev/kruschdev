@@ -16,10 +16,10 @@
 
 # Kevin Ruschman
 
-**AI Infrastructure Engineer | Agent Systems | Reliability & Verification**: *"I build the reliability infrastructure that makes autonomous AI systems safe, persistent, and useful"*  
-`Independent R&D Lab · Open to senior-level and higher-scope technical roles across agent infrastructure, persistent memory, model orchestration, sandboxed code execution, and AI reliability/evaluation` · Los Angeles, CA / Remote / Hybrid · [**Portfolio (`krusch.dev`) ↗**](https://krusch.dev) · [**Resume ↗**](https://krusch.dev/resume)
+**AI Infrastructure Engineer | Agent Systems | Reliability & Verification**: *"I build the infrastructure that makes AI coding agents reliable."*  
+`Target Roles: AI Infrastructure Engineer · Agent Systems Engineer · AI Reliability & Evaluation Engineer · Developer Infrastructure Engineer (AI Agents) · Open to individual-contributor roles, including senior scope depending on team needs` · Los Angeles, CA / Remote / Hybrid · [**Portfolio (`krusch.dev`) ↗**](https://krusch.dev) · [**Resume ↗**](https://krusch.dev/resume)
 
-I design and build **open-source agent infrastructure, crash-recoverable execution harnesses, persistent working-memory substrates, and cost-disciplined multi-GPU inference routers**. Rather than treating language models as self-policing control planes, I run them as stateless candidate generators bounded by **`PostgreSQL` write-ahead state**, **`<32ms` journaled multi-file apply protocols + POSIX atomic per-file `renameSync`**, **`<15µs` pure-CPU Stage-0 cascade dispatch**, **`<1ms` static AST checks**, and **isolated sandboxed test gates**, without claiming that deterministic gates guarantee a model's plan is semantically right.
+I build the **open-source infrastructure that makes AI coding agents reliable**: persistent agent memory, deterministic static/AST code verification, crash-recoverable sandboxed execution, and cost-disciplined multi-GPU inference routing. Rather than treating language models as self-policing control planes, I run them as stateless candidate generators bounded by **`PostgreSQL` write-ahead state**, **`<32ms` journaled multi-file apply protocols + POSIX atomic per-file `renameSync`**, **`<15µs` pure-CPU Stage-0 cascade dispatch**, **`<1ms` static AST checks**, and **isolated sandboxed test gates**, without claiming that deterministic gates guarantee a model's plan is semantically right.
 
 > **Lab Provenance:** Independent R&D lab and open-source engineering research. Projects, evaluations, and reference architectures are developed and tested in my own lab unless otherwise indicated.
 
