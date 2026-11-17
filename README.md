@@ -127,8 +127,9 @@ Before focusing full-time on AI infrastructure, I spent nine years (`2014–2023
 
 ---
 
-### 📖 Selected Architecture Writing ([All 28 Papers on krusch.dev →](https://krusch.dev/articles/))
+### 📖 Selected Architecture Writing ([All 29 Papers on krusch.dev →](https://krusch.dev/articles/))
 
+- [**The Collaborative Power of MIT Open Source: Fusing Common Ground and DEADBOLT into a Validated Brick Exchange**](https://krusch.dev/articles/mit-open-source-brick-exchange-common-ground-deadbolt): How MIT licensing let two EVOLVE 8090 architectures ([`Common Ground`](https://github.com/0xANUSHKA/common-ground-8090) and [`DEADBOLT`](https://github.com/kruschdev/deadbolt)) compound into `@krusch/toolkit/brick-exchange` (Brick `#40`, 4-gate fault-injection sandboxes, Ed25519 seals, scoped cross-team grants, `.brick-lock.json`, and 2-hop AST multi-agent fan-out; `170/170` tests).
 - [**Why Coding Agents Need Release-Gated Lego Bricks, Not Prompted Boilerplate: Inside a 40-Brick, Collaborative Code Substrate**](https://krusch.dev/articles/lego-system-for-code): Eliminating LLM-regenerated HTTP `413` TCP `RST` races, DNS-rebinding SSRF, FTS5 injection, idempotency races, mutable audit logs, IDOR leaks, and YAML alias bombs across `104/104` (`100%`) lab repositories using [`@krusch/toolkit` `v1.8.1` & `krusch_toolkit` `v1.6.0`](https://github.com/kruschdev/toolkit) (`40` runtime bricks, Ed25519-sealed Brick Exchange & 2-hop AST fan-out, `16` `<1ms` static/AST detectors) and pre-commit MCP diff guards.
 - [**The Krusch Coding Harness**](https://krusch.dev/articles/krusch-coding-harness): Designing a `PostgreSQL` write-ahead apply journal, POSIX atomic `renameSync`/`fsync` swap engine, mid-commit crash-injection harness, and pre-commit SHA-256 drift gate for autonomous coding agents.
 - [**Beyond Flat Vector RAG: What Makes `krusch-context-mcp` Special**](https://krusch.dev/articles/what-makes-krusch-context-mcp-special): 5-verb hierarchical working memory, temporal lineage (`supersedes_id`), and SHA-256 line-span drift checks across `100K`–`10M` tokens.
