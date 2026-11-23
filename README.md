@@ -200,7 +200,7 @@ Working where miswired circuits, overloaded generators, and unhedged operating c
 
 ---
 
-### 📖 Selected Architecture Writing ([All 30 Papers on krusch.dev →](https://krusch.dev/articles/))
+### 📖 Selected Architecture Writing ([All 31 Papers on krusch.dev →](https://krusch.dev/articles/))
 
 - [**Why Coding Agents Need Release-Gated Lego Bricks, Not Prompted Boilerplate: Inside a 40-Brick, Collaborative Code Substrate**](https://krusch.dev/articles/lego-system-for-code): Eliminating LLM-regenerated HTTP `413` TCP `RST` races, DNS-rebinding SSRF, FTS5 injection, idempotency races, mutable audit logs, IDOR leaks, and YAML alias bombs across `104/104` (`100%`) lab repositories using [`@krusch/toolkit` `v1.8.1` & `krusch_toolkit` `v1.6.0`](https://github.com/kruschdev/toolkit) (`40` runtime bricks, Ed25519-sealed Brick Exchange & 2-hop AST fan-out, `16` `<1ms` static/AST detectors).
 - [**The Krusch Coding Harness**](https://krusch.dev/articles/krusch-coding-harness): Designing a `PostgreSQL` write-ahead apply journal, POSIX atomic `renameSync`/`fsync` swap engine, mid-commit crash-injection harness, and pre-commit SHA-256 drift gate for autonomous coding agents.
