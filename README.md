@@ -5,7 +5,7 @@
   <br/><br/>
 
   [![Website](https://img.shields.io/badge/Website-krusch.dev-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=060913)](https://krusch.dev) [![Resume](https://img.shields.io/badge/Resume-PDF_%26_Web-7c4dff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://krusch.dev/resume) [![MCP Registry](https://img.shields.io/badge/MCP_Registry-8%2F8_dev.krusch-10b981?style=for-the-badge&logo=serverless&logoColor=060913)](https://registry.modelcontextprotocol.io/v0/servers?search=dev.krusch)
-  [![npm](https://img.shields.io/badge/npm-11_Packages-cb3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/~kruschdev)
+  [![npm](https://img.shields.io/badge/npm-9_Packages-cb3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/~kruschdev)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-@krush420-ffcc00?style=for-the-badge&logo=huggingface&logoColor=060913)](https://huggingface.co/krush420)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin_Ruschman-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-saylor-ruschman-1080493a3/)
   [![X](https://img.shields.io/badge/X-@Kev96790724-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Kev96790724)
@@ -34,7 +34,7 @@ npx krusch-stack demo && npx krusch-stack init --ide all --defer-tools && npx kr
 
 | Flagship System | What It Solves (Plain English) | Adoption, Tests & Key Proof |
 | :--- | :--- | :--- |
-| [**`krusch-stack`**](https://github.com/kruschdev/krusch-stack) `v1.3.1` | Single-command CLI & MCP server bundling memory, AST search, and safe execution | [`8/8` Official MCP Registry servers](https://registry.modelcontextprotocol.io/v0/servers?search=dev.krusch) · `11` npm packages · `91/91` stack tests |
+| [**`krusch-stack`**](https://github.com/kruschdev/krusch-stack) `v1.3.1` | Single-command CLI & MCP server bundling memory, AST search, and safe execution | [`8/8` Official MCP Registry servers](https://registry.modelcontextprotocol.io/v0/servers?search=dev.krusch) · `9` npm packages · `91/91` stack tests |
 | [**`krusch-context-mcp`**](https://github.com/kruschdev/krusch-context-mcp) `v2.0.3` | Persistent working memory that flags stale rules when anchored source lines change | `83★` · `747/mo` npm · `155/155` tests · [AddonAudit `100/100`](https://addonaudit.com/addon/dev-krusch-krusch-context-mcp/) · `90.26%` Snap `LoCoMo` (`$0` ingestion, lab run) |
 | [**`@krusch/toolkit`**](https://github.com/kruschdev/toolkit) `v1.8.1` | `40` pre-audited JS/TS & Python runtime bricks + `16` `<1ms` AST security guards | `191/191` Node & `201/201` `pytest` tests · validated on `OWASP/NodeGoat` |
 | [**`krusch-coding-harness`**](https://github.com/kruschdev/krusch-coding-harness) + [**`grounded-harness`**](https://github.com/kruschdev/grounded-harness) | Stages agent edits in network-off sandboxes with `SIGKILL`-recoverable atomic apply | `118/118` + `15/15` tests · `19.56% → 51.56%` `Aider Polyglot` open-weights lift (lab run) |
@@ -95,7 +95,7 @@ npx krusch-stack demo && npx krusch-stack init --ide all --defer-tools && npx kr
 </details>
 
 #### 3. [`krusch-coding-harness`](https://github.com/kruschdev/krusch-coding-harness) + [`grounded-harness`](https://github.com/kruschdev/grounded-harness) `v0.2.1` (& Unified [`krusch-stack`](https://github.com/kruschdev/krusch-stack) `v1.3.1`): Sandboxed Staging & Crash-Recoverable Apply ([▶ 20s Live Execution](https://krusch.dev/assets/video/harness-loop-demo.mp4) · [▶ Stack Tour `01:40`](https://krusch.dev/assets/video/krusch-stack-tour.mp4))
-- **Overview (`118/118` + `15/15` harness tests · `91/91` stack tests across `13` suites · [`8/8` Official MCP Registry `dev.krusch/*` servers](https://registry.modelcontextprotocol.io/v0/servers?search=dev.krusch) · `11` npm packages):** Stages agent patches inside network-disabled `Bubblewrap` (`bwrap --unshare-net`) test sandboxes backed by a `<32ms` `PostgreSQL` write-ahead apply journal, swapping verified edits onto disk via POSIX atomic `renameSync`/`fsync` + pre-commit SHA-256 drift checks.
+- **Overview (`118/118` + `15/15` harness tests · `91/91` stack tests across `13` suites · [`8/8` Official MCP Registry `dev.krusch/*` servers](https://registry.modelcontextprotocol.io/v0/servers?search=dev.krusch) · `9` npm packages):** Stages agent patches inside network-disabled `Bubblewrap` (`bwrap --unshare-net`) test sandboxes backed by a `<32ms` `PostgreSQL` write-ahead apply journal, swapping verified edits onto disk via POSIX atomic `renameSync`/`fsync` + pre-commit SHA-256 drift checks.
 
 <details>
 <summary><strong>Crash-Injection Proof, TOCTOU Scope Limits &amp; Benchmarks</strong> (<code>SIGKILL</code> Recovery · <code>51.56%</code> Aider Polyglot · <code>0/949</code> AgentDojo)</summary>
