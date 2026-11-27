@@ -57,7 +57,7 @@ npx krusch-stack demo && npx krusch-stack init --ide all --defer-tools && npx kr
 | [**`krusch-grounded-harness`**](https://github.com/kruschdev/grounded-harness) | `v0.2.2` | `7` | [![Audited by AddonAudit](https://addonaudit.com/badges/dev-krusch-grounded-harness.svg)](https://addonaudit.com/addon/dev-krusch-grounded-harness/) |
 | [**`hydrascope`**](https://github.com/kruschdev/HydraScope) | `v0.1.2` | `6` | [![Audited by AddonAudit](https://addonaudit.com/badges/dev-krusch-hydrascope.svg)](https://addonaudit.com/addon/dev-krusch-hydrascope/) |
 | [**`krusch-frontend-mcp`**](https://github.com/kruschdev/krusch-frontend-mcp) | `v1.1.2` | `12` | [![Audited by AddonAudit](https://addonaudit.com/badges/dev-krusch-krusch-frontend-mcp.svg)](https://addonaudit.com/addon/dev-krusch-krusch-frontend-mcp/) |
-| [**`g-krusch`**](https://github.com/kruschdev/G-krusch) | `v1.0.2` | `12` | [![Audited by AddonAudit](https://addonaudit.com/badges/dev-krusch-g-krusch.svg)](https://addonaudit.com/addon/dev-krusch-g-krusch/) |
+| [**`g-krusch`**](https://github.com/kruschdev/G-krusch) *(deprecated)* | `v1.0.2` | `12` | [![Audited by AddonAudit](https://addonaudit.com/badges/dev-krusch-g-krusch.svg)](https://addonaudit.com/addon/dev-krusch-g-krusch/) *(superseded by Google's official Workspace MCP servers & `gwscli`)* |
 
 </details>
 
